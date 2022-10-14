@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer utilities {
+  #logos {
+    img:hover {
+      @apply opacity-90;
+    }
+  }
+
+  .snippets-padding {
+    @apply mx-auto;
+    width: 325px;
+
+    @include mq {
+      width: 100%;
+    }
+  }
+  .snippets-heading {
+    @include mq {
+      width: 725px;
+    }
+  }
+
+  .wider-padding {
+    @apply mx-auto;
+    width: 325px;
+
+    @include mq {
+      width: 1200px;
+    }
+  }
+}

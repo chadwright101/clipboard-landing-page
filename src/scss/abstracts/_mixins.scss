@@ -1,0 +1,8 @@
+@use "./variables" as *;
+@use "./functions" as *;
+
+@mixin mq {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

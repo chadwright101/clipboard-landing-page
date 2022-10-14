@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+@layer components {
+  .btn {
+    width: 100%;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+
+    @include mq {
+      width: 15rem;
+    }
+
+    &__1 {
+      @apply bg-clipboard-cyan;
+      box-shadow: 0px 3px 0px 0px #249e89;
+
+      &:hover {
+        @apply opacity-90;
+      }
+    }
+
+    &__2 {
+      @apply bg-clipboard-blue;
+      box-shadow: 0px 3px 0px 0px #4f62d8;
+
+      &:hover {
+        @apply opacity-90;
+      }
+    }
+  }
+}

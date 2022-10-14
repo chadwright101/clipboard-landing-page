@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer components {
+  .header-bg {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+
+    @include mq {
+      background-image: url(./images/bg-header-desktop.png);
+    }
+  }
+}

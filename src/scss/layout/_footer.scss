@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer components {
+  .nav {
+    li {
+      @apply text-h4 text-clipboard-darkgrey;
+
+      @apply xl:text-pararaphDesktop;
+
+      &:hover {
+        @apply text-clipboard-cyan;
+      }
+
+      a {
+        padding: 0.5rem 2rem;
+      }
+      @include mq {
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .social {
+    li:hover {
+      @apply opacity-90;
+    }
+  }
+}

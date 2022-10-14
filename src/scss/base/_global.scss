@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+@use "./fonts" as *;
+
+@layer components {
+  body {
+    text-align: center;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    @apply text-clipboard-darkgrey mb-4;
+  }
+
+  h1 {
+    @apply text-h1;
+
+    @include mq {
+      @apply text-h1Desktop;
+    }
+  }
+
+  h2 {
+    @apply text-h2;
+
+    @include mq {
+      @apply text-h2Desktop;
+    }
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+    color: white;
+  }
+
+  p {
+    @apply text-pararaph text-clipboard-grey mb-14;
+    @include mq {
+      @apply text-pararaphDesktop;
+    }
+  }
+
+  .padding {
+    @apply m-auto;
+    width: 325px;
+
+    @include mq {
+      width: 725px;
+    }
+  }
+}
