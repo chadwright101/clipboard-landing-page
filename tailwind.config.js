@@ -1,19 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["src/pug/pages/index.pug", "./src/**/*.{js,ts,jsx,tsx,pug}"],
+  content: ["src/index.pug", "./src/**/*.{js,ts,jsx,tsx,pug}"],
   theme: {
     fontFamily: {
       body: ['"Bai Jamjuree", sans-serif'],
-    },
-    colors: {
-      clipboard: {
-        cyan: "hsl(171, 66%, 44%)",
-        blue: "hsl(233, 100%, 69%)",
-        darkgrey: "hsl(210, 10%, 33%)",
-        grey: "hsl(201, 11%, 66%)",
-        darkcyan: "#249e89",
-        darkblue: "#4f62d8",
-      },
     },
     fontSize: {
       pararaph: ["1rem", "28px"],
@@ -32,6 +22,16 @@ module.exports = {
       },
       height: {
         computer: "572px",
+      },
+      colors: {
+        clipboard: {
+          cyan: "hsl(171, 66%, 44%)",
+          blue: "hsl(233, 100%, 69%)",
+          darkgrey: "hsl(210, 10%, 33%)",
+          grey: "hsl(201, 11%, 66%)",
+          darkcyan: "#249e89",
+          darkblue: "#4f62d8",
+        },
       },
     },
   },
