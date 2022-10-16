@@ -11,23 +11,25 @@ html(lang="en")
     block header
         include header
 
-    block snippets 
-        include ../sections/snippets
+    main
 
-    block access 
-        include ../sections/access
+        block snippets 
+            include ../sections/snippets
 
-    block supercharge
-        include ../sections/supercharge
+        block access 
+            include ../sections/access
 
-    block logos 
-        include ../sections/logos
+        block supercharge
+            include ../sections/supercharge
 
-    block iOS 
-        include ../sections/ios
+        block logos 
+            include ../sections/logos
+
+        block iOS 
+            include ../sections/ios
+            
+        block buttons
+            include ../components/buttons
         
-    block buttons
-        include ../components/buttons
-    
     block footer 
         include footer
